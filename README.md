@@ -23,6 +23,7 @@ This is a queuing model in which the arrival is Marcovian and departure distribu
 
  
 ## Program :
+```
 NAME: PRANAVI S
 REGISTER NO.: 212225040311
 ACADEMIC YEAR: 2026-27
@@ -50,6 +51,7 @@ if (lam <  mu):
 else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("---------------------------------------------------------------")
+```
 
 ## Output :
 <img width="592" height="142" alt="image" src="https://github.com/user-attachments/assets/4e0ce431-20c9-4443-8a85-e8750dbf88a6" />
