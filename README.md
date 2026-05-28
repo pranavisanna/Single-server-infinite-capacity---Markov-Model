@@ -19,44 +19,46 @@ This is a queuing model in which the arrival is Marcovian and departure distribu
 
 
 ## Experiment:
+<img width="1025" height="586" alt="image" src="https://github.com/user-attachments/assets/f6fa26c5-7e62-4b93-8980-fa903be28239" />
 
 
  
 ## Program :
 ```
-NAME: PRANAVI S
-REGISTER NO.: 212225040311
-ACADEMIC YEAR: 2026-27
-arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
-ser_time=float(input("Enter the mean  inter service time of Lathe Machine (in secs) :  "))
-Robot_time=float(input("Enter the Additional time taken for the Robot (in secs) :  "))
-lam=1/arr_time
-mu=1/(ser_time+Robot_time)
+arr_time = float(input("Enter the mean interarrival time of objects from Feeder(in secs): "))
+ser_time = float(input("Enter the mean interservice time of Lathe Machine(in secs): "))
+Robot_time = float(input("Enter the Additional time taken for the Robot(in secs): "))
+
+lam = 1 / arr_time
+mu = 1 / (ser_time + Robot_time)
+
 print("--------------------------------------------------------------")
 print("Single Server with Infinite Capacity - (M/M/1):(oo/FIFO)")
 print("--------------------------------------------------------------")
-print(f"The mean arrival rate per second : {lam:.2f}")
-print(f"The mean service rate per second : {mu:.2f}")
-if (lam <  mu):
-    Ls=lam/(mu-lam)
-    Lq=Ls-lam/mu
-    Ws=Ls/lam
-    Wq=Lq/lam
-    print(f"Average number of objects in the system : {Ls:.2f}")
-    print(f"Average number of objects in the conveyor :  {Lq:.2f}")
-    print(f"Average waiting time of an object in the system : {Ws:.2f} secs")
-    print(f"Average waiting time of an object in the conveyor : {Wq:.2f} secs")
-    print(f"Probability that the system is busy : {(lam/mu):.2f}" )
-    print(f"Probability that the system is empty : {(1-lam/mu):.2f}" )
+print("The mean arrival rate per second: %0.2f" % lam)
+print("The mean service rate per second: %0.2f" % mu)
+
+if (lam < mu):
+    Ls = lam / (mu - lam)
+    Lq = Ls - lam / mu
+    Ws = Ls / lam
+    Wq = Lq / lam
+    print("Average number of objects in the system :%0.2f" % Ls)
+    print("Average number of objects in the conveyor: %0.2f" % Lq)
+    print("Average waiting time of an object in the system: %0.2f secs" % Ws)
+    print("Average waiting time of an object in the conveyor :%0.2f secs" % Wq)
+    print("Probability that the system is busy: %0.2f" % (lam / mu))
+    print("Probability that the system is empty: %0.2f" % (1 - lam / mu))
 else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("---------------------------------------------------------------")
 ```
+<img width="719" height="492" alt="image" src="https://github.com/user-attachments/assets/3f6ba194-83f0-4b1f-b597-456449df1093" />
+
 
 ## Output :
-<img width="592" height="142" alt="image" src="https://github.com/user-attachments/assets/4e0ce431-20c9-4443-8a85-e8750dbf88a6" />
-
+<img width="870" height="338" alt="image" src="https://github.com/user-attachments/assets/a58ffe6c-3015-477b-b90e-f4df0d1d9705" />
 
 ## Result :
-Expected output is Achieved!!!
+Thus, the program has been executed successfully and the required parameters have been calculated as per the given conditions
 
